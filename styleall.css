@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=Overpass');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: arcade;
+    src: url(Fonts/ARCADECLASSIC.TTF);
+}
+
+@font-face {
+    font-family: game;
+    src: url(Fonts/gomarice_game_continue_02.ttf);
+}
+
+@font-face {
+    font-family: pdark;
+    src: url(Fonts/pdark.TTF);
+}
+
+@font-face {
+    font-family: video;
+    src: url(Fonts/VIDEOPHREAK.TTF);
+}
+
+@font-face {
+    font-family: Digital;
+    src: url(Fonts/Digital_tech.otf);
+}
+
+@font-face {
+    font-family: freedom;
+    src: url(Fonts/FREEDOM.ttf);
+}
+
+@font-face {
+    font-family: zorq;
+    src: url(Fonts/zorque.TTF);
+}
+
+@font-face {
+    font-family: gtek;
+    src: url(Fonts/Gtek.ttf);
+}
+
+@font-face {
+    font-family: oxin;
+    src: url(Fonts/Oxin.ttf);
+}
+
+
+
+.panel {
+    width: 0;
+    position: fixed;
+    z-index: 11;
+    max-width: 100%;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center;
+    font-family: zorq;
+    border-bottom-left-radius: 25px;
+    padding-bottom: 10px;
+}
+
+.panel a {
+    padding: 8px 32px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.panel a:hover {
+    color: red;
+}
+
+.panel .close {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 36px;
+}
+.panel:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #111;
+    opacity: 0.5;
+    z-index: -1 ;
+}
+
+#arrow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 36px;
+}
+
+.navbutton {
+    right: 0;
+    z-index: 10;
+    position: fixed;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    transition: 0.5s ease-out;
+    border-bottom-left-radius: 10px;
+}
+.navbutton:hover{
+    background-color: rgba(17,17,17,0.5);
+    }
+#nawigacja {
+    width: 0;
+}
+
+#nawigacja.opened {
+    width: 250px;
+}
+
+#nawigacja.opened + .navbutton {
+    opacity: 0;
+    transition: .5s;
+}
+html {
+    scroll-behavior: smooth;
+}
+footer {
+    text-align: center;
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
+    height: 25px;
+    background-color: black;
+    position: relative;
+    z-index: 7;
+}
+
+#footertext {
+    color: red;
+    font-family: zorq;
+    font-size: 20px;
+}
+.music{
+    position: fixed;
+    z-index: 11;
+    width: 40px;
+    max-width: 100%;
+    top: 67vh;
+    right: 0;
+    transition: 0.5s;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+}
+.music:hover{
+    background-color: rgba(17,17,17,0.5);
+}
+.music.openedmusic{
+    width: 400px;
+    background-color: rgba(17,17,17,0.5);
+}
+.musicbutton::before{
+    content: "";
+    width:20px;
+    height: 20px;
+    background-image: url(Img/arrowside2.png);
+    background-size: cover;
+    opacity:0;
+    position: absolute;
+    top: 41px;
+    left: -28px;
+    transition: .5s;
+}
+.musicbutton:hover::before{
+    opacity: 1;
+}
+.musicbutton.openedbutton::before{
+    transform: rotate(180deg);
+}
+.video {
+    z-index: 0;
+    position: fixed;
+}
+.videoyt{
+    position: fixed;
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+iframe{
+    border: none;
+}
+.review{
+    z-index:2;
+    position:relative;
+    background-color: rgba(17,17,17,0.5);
+    color:white;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-radius: 50px;
+    font-family: Overpass;
+    font-size: 19px;
+}
+.musicbutton{
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: none;
+    transition: 0.5s;
+    font-size: 40px;
+    text-align: center;
+    padding-right: 6px;
+    padding-left: 6px;
+    outline: none;
+}
+.musicbutton:hover{
+	color:red;
+}
+.musicyt{
+    width: 100%;
+}
+p span{
+    font-size: 25px;
+}

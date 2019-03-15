@@ -1,0 +1,124 @@
+header {
+    background-image: url(Img/Background3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+    z-index: -3;
+}
+main {
+    background-color: black;
+    z-index: 2;
+    max-width: 100%;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+#cytat {
+    font-family: zorq;
+    color: white;
+    font-size: 70px;
+    z-index: -2;
+}
+
+#cytatdiv {
+    height: 100px;
+    margin: 0 auto;
+    position: fixed;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.roll {
+    text-align: center;
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
+    height: 50px;
+    background-color: black;
+    position: relative;
+    z-index: 1;
+}
+
+#poison {
+    color: red;
+    font-family: arcade;
+    font-size: 50px;
+}
+
+#squares {
+    position: relative;
+    background-color: black;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+}
+.square{
+    width: 530px;
+    height: 530px;
+    
+    background-color: black;
+    border: 1px silver solid;
+    border-radius: 50px;
+    transition: 0.5s ease-out;
+    background-size: cover;
+    filter: grayscale(100%);
+    font-size: 80px;
+    text-align: center;
+    line-height: 530px;
+    color: transparent;
+    font-family: digital;
+}
+.square:hover {
+    filter: grayscale(0%);
+    cursor: pointer;
+    color: white;
+    text-shadow: 3px 3px grey;
+}
+.squarea{
+    margin: 50px;
+    transition: 0.5s ease-out;
+}
+.squarea:hover{
+    transform: scale(1.1);
+}
+a{
+    text-decoration: none;
+}
+.witcher {
+   background-image: url(Img/Witcher.png);
+}
+.nier {
+    background-image: url(Img/nier.png);
+}
+.warframe{
+    background-image: url(Img/warframe2.png);
+}
+.square.RL {
+    font-size: 77px;
+    background-image: url(Img/Rl.png);
+}
+.fortnite {
+    background-image: url(Img/omega2.png);
+}
+.square.CS{
+    font-size:34px;
+    background-image:url(Img/cs2.png);
+}
+.square.R6 {
+    font-size: 69px;
+    background-image: url(Img/ela2.png);
+}
+.arma {
+    background-image: url(Img/armaanimu2.png);
+}

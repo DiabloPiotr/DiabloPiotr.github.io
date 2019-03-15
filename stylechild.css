@@ -1,0 +1,15 @@
+main {
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+    max-width: 100%;
+    position: relative;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    padding-top:5.3%;
+    padding-bottom:4.3%;
+}
+header{
+    height: 100vh;
+    z-index: 0;
+}
